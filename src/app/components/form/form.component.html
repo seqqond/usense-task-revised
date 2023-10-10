@@ -1,0 +1,10 @@
+<div class="form">
+    <form [formGroup]="form" novalidate>
+        <label for="password">Password</label>
+        <input formControlName="password" type="password" id="password">
+        <p>Password should contain letters, symbols, and numbers for maximum strength</p>
+    </form>
+</div>
+<div *ngFor="let _ of [].constructor(3); let i = index" class='section' [ngClass]="getSectionClass(i)">
+
+</div>
